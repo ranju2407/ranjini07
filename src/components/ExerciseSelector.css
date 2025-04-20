@@ -1,0 +1,37 @@
+.exercise-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.exercise-selector .exercise-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.exercise-selector .exercise-btn:hover {
+  background: #2980b9;
+}
+.exercise-selector .exercise-btn.active {
+  background: #2ecc71;
+}
+.exercise-selector .exercise-btn.stop-btn {
+  background: #e74c3c;
+}
+
+@media (max-width: 600px) {
+  .exercise-selector {
+    flex-direction: column;
+  }
+  .exercise-selector .exercise-btn {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=ExerciseSelector.css.map */
